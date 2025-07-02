@@ -4,7 +4,7 @@ from utils.barcode_utils import generate_barcode
 # Create your models here.
 class BarcodeModel(models.Model):
     barcode = models.CharField(max_length=100, unique=True, blank=True)
-    barcode_image = models.ImageField(upload_to='images/barcodes/', blank=True)
+    barcode_image = models.ImageField(upload_to='images/barcodes/', blank=True, unique=True)
 
     class Meta:
         abstract = True  # Doesn't create a database table
