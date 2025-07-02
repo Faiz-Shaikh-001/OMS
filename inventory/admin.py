@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Frame, LensProduct
 
-
 @admin.register(Frame)
 class FrameAdmin(admin.ModelAdmin):
     list_display = ['name', 'frame_type', 'code', 'color', 'size', 'quantity', 'sales_price', 'purchase_price']

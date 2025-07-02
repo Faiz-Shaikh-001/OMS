@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'customers.apps.CustomersConfig',
+    'doctor.apps.DoctorConfig',
+    'prescription.apps.PrescriptionConfig',
     'inventory.apps.InventoryConfig',
     'utils.apps.UtilsConfig',
     'orders.apps.OrdersConfig',
