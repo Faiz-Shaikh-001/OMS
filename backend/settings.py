@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'settings_panel.apps.SettingsPanelConfig',
     'customers.apps.CustomersConfig',
     'doctor.apps.DoctorConfig',
     'prescription.apps.PrescriptionConfig',

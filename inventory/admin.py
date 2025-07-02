@@ -12,8 +12,8 @@ class FrameAdmin(admin.ModelAdmin):
 @admin.register(LensProduct)
 class LensProductAdmin(admin.ModelAdmin):
     list_display = ['product_name', 'lens_type', 'company_name', 'material_type', 'side', 'spherical', 'cylindrical', 'sales_price']
-    search_fields = ['product_name', 'company_name']
+    search_fields = ['product_name', 'company_name', 'barcode']
     list_filter = ['lens_type', 'material_type']
-    readonly_fields = ['barcode_image']
+    readonly_fields = ['barcode', 'barcode_image']
 
 
