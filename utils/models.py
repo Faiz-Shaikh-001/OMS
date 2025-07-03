@@ -3,8 +3,8 @@ from utils.barcode_utils import generate_barcode
 
 # Create your models here.
 class BarcodeModel(models.Model):
-    barcode = models.CharField(max_length=100, unique=True, blank=True)
-    barcode_image = models.ImageField(upload_to='images/barcodes/', blank=True, unique=True)
+    barcode = models.CharField(max_length=100, unique=True, blank=True, help_text="automatically generated using product details")
+    barcode_image = models.ImageField(upload_to='images/barcodes/', blank=True, unique=True, help_text="automatically generated using barcode value")
 
     class Meta:
         abstract = True  # Doesn't create a database table

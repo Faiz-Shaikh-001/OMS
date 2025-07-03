@@ -32,10 +32,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'settings_panel.apps.SettingsPanelConfig',
-    'customers.apps.CustomersConfig',
-    'doctor.apps.DoctorConfig',
+    'customers',
+    'doctor',
     'prescription.apps.PrescriptionConfig',
-    'inventory.apps.InventoryConfig',
+    'inventory',
     'utils.apps.UtilsConfig',
     'orders.apps.OrdersConfig',
     'django.contrib.admin',
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'phonenumber_field',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
